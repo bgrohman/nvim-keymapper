@@ -13,5 +13,5 @@
     ```lua
     local keymapper = require('nvim-keymapper')    
     vim.api.nvim_create_user_command('Keymaps', keymapper.keymaps_picker, {})
-    module.set('n', '<leader>k', ':Keymaps<CR>', {}, 'Show keymappings')
+    keymapper.set('n', '<leader>k', ':Keymaps<CR>', {}, 'Show keymappings')
     ```
