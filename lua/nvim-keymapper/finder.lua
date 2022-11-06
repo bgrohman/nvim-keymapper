@@ -2,7 +2,7 @@ local entry_display = require('telescope.pickers.entry_display')
 local finders = require('telescope.finders')
 local Path = require('plenary.path')
 
-local mappings = require('mappings')
+local mappings = require('nvim-keymapper.mappings')
 
 local module = {}
 

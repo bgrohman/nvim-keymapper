@@ -1,9 +1,9 @@
 local pickers = require('telescope.pickers')
 local conf = require('telescope.config').values
 
-local mappings = require('mappings')
-local finder = require('finder')
-local actions = require('actions')
+local mappings = require('nvim-keymapper.mappings')
+local finder = require('nvim-keymapper.finder')
+local actions = require('nvim-keymapper.actions')
 
 local module = {}
 
