@@ -2,8 +2,6 @@
 
 [Telescope](https://github.com/nvim-telescope/telescope.nvim) extension for creating, documenting, and searching your keymappings.
 
-![example](https://imgur.com/yeXBSts)
-
 ## Why?
 
 I created nvim-keymapper as a replacement for Telescope's built-in keymaps picker. I wanted something that only shows my custom keymaps and will also show a short documentation string that I can use to help remember what some of the mappings do. The documentation strings are also searchable in the Telescope picker.
