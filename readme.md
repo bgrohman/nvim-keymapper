@@ -26,7 +26,7 @@ I created nvim-keymapper as a replacement for Telescope's built-in keymaps picke
 
 ### Creating Keymaps
 
-Use the `nvim-keymapper.set` function to create your keymaps instead of `vim.keymap.set`. The first four arguments (mode, lhs, rhs, ops) are the same as `vim.keymap.set` and are passed through.
+Use the `nvim-keymapper.set` function to create your keymaps instead of `vim.keymap.set`. The first four arguments (mode, lhs, rhs, ops) are the same as `vim.keymap.set` and are passed through. The fifth argument is a documentation string.
 
 Example: Create a keymap for opening a terminal in a vertical split.
 ```lua
