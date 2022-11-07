@@ -2,7 +2,7 @@
 
 [Telescope](https://github.com/nvim-telescope/telescope.nvim) extension for creating, documenting, and searching your keymappings.
 
-![example](./readme_example.gif)
+![example](https://imgur.com/yeXBSts)
 
 ## Why?
 
