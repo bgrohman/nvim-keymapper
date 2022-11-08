@@ -31,7 +31,7 @@ Use the `nvim-keymapper.set` function to create your keymaps instead of `vim.key
 Example: Create a keymap for opening a terminal in a vertical split.
 ```lua
 local keymapper = require('nvim-keymapper')
-keymapper.set('n', '<leader>T', '<ESC>:vsplit | term<CR>', {}, 'Open a terminal in a veritcal split')
+keymapper.set('n', '<leader>T', '<ESC>:vsplit | term<CR>', {}, 'Open a terminal in a vertical split')
 ```
 
 ### Using the Telescope Picker
