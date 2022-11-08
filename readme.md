@@ -1,6 +1,6 @@
 # nvim-keymapper
 
-[Telescope](https://github.com/nvim-telescope/telescope.nvim) extension for creating, documenting, and searching your keymappings.
+[Telescope](https://github.com/nvim-telescope/telescope.nvim) extension for creating, documenting, and searching your Neovim keymappings.
 
 ![screenshot](./example_screenshot.png)
 
