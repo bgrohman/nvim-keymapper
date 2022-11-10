@@ -13,6 +13,7 @@ module.set = function(mode, lhs, rhs, opts, doc_string)
         doc_string = doc_string
     }
 
+    opts.desc = doc_string
     vim.keymap.set(mode, lhs, rhs, opts)
 end
 
