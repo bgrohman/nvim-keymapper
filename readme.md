@@ -6,7 +6,7 @@
 
 ## Why?
 
-I created nvim-keymapper as a replacement for Telescope's built-in keymaps picker. I wanted something that only shows my custom keymaps and will also show a short documentation string that I can use to help remember what some of the mappings do. The documentation strings are also searchable in the Telescope picker.
+I created nvim-keymapper as a replacement for Telescope's built-in keymaps picker. I wanted something that only shows my custom keymaps and will also show a short documentation string that I can use to help remember what some of the mappings do. The documentation strings are also searchable in the Telescope picker, and the picker uses highlight groups to distinguish sections.
 
 ## Install
 
@@ -18,15 +18,16 @@ I created nvim-keymapper as a replacement for Telescope's built-in keymaps picke
 3. Set up commands and keymappings:
     ```lua
     local keymapper = require('nvim-keymapper')    
-    vim.api.nvim_create_user_command('Keymaps', keymapper.keymaps_picker, {})
-    keymapper.set('n', '<leader>k', ':Keymaps<CR>', {}, 'Show keymappings')
+    vim.api.nvim_create_user_command('Keymaps', keymapper.keymaps_picker, {desc = 'Telescope: Show keymaps'})
+    vim.api.nvim_create_user_command('AllKeymaps', builtin.keymaps, {desc = 'Telescope: Show all keymaps'})
+    keymapper.set('n', '<leader>k', ':Keymaps<CR>', {}, 'Telescope: Show keymaps')
     ```
 
 ## Usage
 
 ### Creating Keymaps
 
-Use the `nvim-keymapper.set` function to create your keymaps instead of `vim.keymap.set`. The first four arguments (mode, lhs, rhs, ops) are the same as `vim.keymap.set` and are passed through. The fifth argument is a documentation string.
+Use the `nvim-keymapper.set` function to create your keymaps instead of `vim.keymap.set`. The first four arguments (mode, lhs, rhs, ops) are the same as `vim.keymap.set` and are passed through. The fifth argument is a documentation string and will also be set as `opts.desc`.
 
 Example: Create a keymap for opening a terminal in a vertical split.
 ```lua
